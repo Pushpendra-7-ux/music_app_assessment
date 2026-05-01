@@ -64,45 +64,14 @@ lib/
 - Dart SDK >= 3.4.0
 - Android Studio / VS Code with Flutter extension
 
-### Run the project
-```bash
-# Clone the repository
-git clone https://github.com/Pushpendra-7-ux/music_app_assessment.git
-cd music_app_assessment
+## Screenshots
 
-# Install dependencies
-flutter pub get
-
-# Run on connected device/emulator
-flutter run
-```
-
-### Build APK
-```bash
-flutter build apk --release
-```
-The APK will be generated at `build/app/outputs/flutter-apk/app-release.apk`
-
-## Key Decisions & Tradeoffs
-
-1. **Mock data instead of API** — The assessment allows mock data. I used a `MockData` class with a simulated 600ms delay to demonstrate proper loading states without the complexity of a backend.
-
-2. **SharedPreferences over Hive/SQLite** — For the scope of this app (favorites list + session ID), SharedPreferences is sufficient and avoids adding heavy database dependencies.
-
-3. **Dark theme only** — Music apps conventionally use dark themes (Spotify, Apple Music, YouTube Music). A single well-polished theme is better than a half-baked light/dark toggle.
-
-4. **No server/backend** — The assessment says "mock API/JSON is fine", so all data lives in `mock_data.dart`. The repository layer is structured so swapping in a real API would only require changing `HomeRepository`.
-
-5. **Riverpod over BLoC** — Riverpod offers cleaner syntax, better dependency injection, and simpler testing compared to BLoC's verbose event/state pattern. For a project of this size, Riverpod is the right choice.
-
-6. **SoundHelix sample audio** — Used free CC-licensed audio from SoundHelix for actual playable tracks, avoiding copyright issues.
-
-## Loading & Error States
-
-Every screen handles three states:
-- **Loading** — Circular progress indicator while data loads
-- **Error** — Error icon with a "Try Again" button
-- **Empty** — Descriptive empty state with an icon and helpful message
+<div align="center">
+  <img src="screenshots/splash.png" width="24%" />
+  <img src="screenshots/home.png" width="24%" />
+  <img src="screenshots/player.png" width="24%" />
+  <img src="screenshots/artist.png" width="24%" />
+</div>
 
 ## License
 
