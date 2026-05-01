@@ -67,9 +67,9 @@ lib/
 ## Screenshots
 
 <div align="center">
-  <img src="screenshots/home.png" width="32%" />
-  <img src="screenshots/player.png" width="32%" />
-  <img src="screenshots/artist.png" width="32%" />
+  <img src="screenshots/home.jpg" width="32%" />
+  <img src="screenshots/player.jpg" width="32%" />
+  <img src="screenshots/artist.jpg" width="32%" />
 </div>
 
 ## License
